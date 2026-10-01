@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roshan Ingershal VR | Data Analytics & AI</title>
+  <meta name="description" content="The portfolio of Roshan Ingershal VR, a B.E. CSE student building data analytics and machine learning projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="mark" href="#top">Roshan Ingershal</a>
+    <nav aria-label="Main menu">
+      <a href="#about">About</a>
+      <a href="#project">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1><span>I turn student data</span> <span>into early warnings.</span></h1>
+        <p class="lead">I am Roshan Ingershal VR, a Computer Science and Engineering student in Chennai. I build data analytics and machine learning tools that show who needs support before it is too late.</p>
+        <div class="actions">
+          <a class="btn primary" href="#project">View my projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <figure class="plot">
+        <canvas id="plot" aria-label="Animated chart of 90 students grouped by dropout risk" role="img"></canvas>
+        <figcaption>
+          <span class="key"><i class="d low"></i>Low risk</span>
+          <span class="key"><i class="d mid"></i>Medium</span>
+          <span class="key"><i class="d high"></i>High risk</span>
+          <button id="toggle" class="btn small" type="button" aria-pressed="false">Group</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="block">
+      <h2>About</h2>
+      <div class="cols">
+        <p>I am studying for a B.E. in Computer Science and Engineering at J.N.N Institute of Engineering, Chennai, currently in my third semester (2026-2027).</p>
+        <p>I enjoy projects where data answers real questions. My latest work identifies students at risk of dropping out and explores what institutions can do early.</p>
+      </div>
+    </section>
+
+    <section id="project" class="block">
+      <h2>AI-Based Student Performance & Dropout Risk Analytics</h2>
+      <p class="sub">Built during an AICTE Academic Internship | IBM SkillsBuild Data Analytics with AI (BharatCares).</p>
+      <div class="cols">
+        <p>This project cleans student data, explores performance patterns, and trains a Random Forest model to flag students at risk of dropping out. Results appear in an interactive Streamlit dashboard with Plotly charts.</p>
+        <div class="tags" aria-label="Technologies used">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Plotly</span><span>Streamlit</span><span>Random Forest</span>
+        </div>
+      </div>
+
+      <form class="demo" id="demo" onsubmit="return false" aria-labelledby="demo-title">
+        <h3 id="demo-title">Try a simple risk estimate</h3>
+        <p class="note">A toy formula to demonstrate the idea. This is not a trained model.</p>
+        <label>Attendance <output id="o-att">75%</output>
+          <input type="range" id="att" min="30" max="100" value="75"></label>
+        <label>Average marks <output id="o-mrk">60%</output>
+          <input type="range" id="mrk" min="0" max="100" value="60"></label>
+        <label>Assignments completed <output id="o-asg">70%</output>
+          <input type="range" id="asg" min="0" max="100" value="70"></label>
+        <div class="meter" role="status" aria-live="polite">
+          <div class="bar"><div id="fill"></div></div>
+          <p id="verdict">Medium risk</p>
+        </div>
+      </form>
+    </section>
+
+    <section id="skills" class="block">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><strong>Programming languages</strong> Python, basic SQL, HTML, CSS, JavaScript</li>
+        <li><strong>Data</strong> Pandas, data cleaning, exploratory analysis</li>
+        <li><strong>Machine learning</strong> Scikit-learn, Random Forest, model evaluation</li>
+        <li><strong>Visualization</strong> Plotly, Streamlit dashboards</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="block">
+      <h2>Contact</h2>
+      <p>Open to internships and project collaborations. Replace the links below with your own.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:your.email@example.com">Send email</a>
+        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Roshan Ingershal VR, J.N.N Institute of Engineering, Chennai</footer>
+  
+</body>
+</html>
